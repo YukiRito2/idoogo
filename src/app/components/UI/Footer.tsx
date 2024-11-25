@@ -65,14 +65,20 @@ export const Footer = () => {
         <div>
           <h3 className="font-bold mb-4">Información útil</h3>
           <ul className="space-y-2">
-            <li>¿Qué es idoogo?</li>
-            <li>Compra en Idoogo</li>
-            <li>Blog</li>
-            <li>Marcas</li>
-            <li>Políticas de devolución de productos</li>
-            <li>Políticas de privacidad</li>
-            <li>Políticas de envío</li>
-            <li>Términos y Condiciones</li>
+            <li className="hover:text-purple-primary">¿Qué es idoogo?</li>
+            <li className="hover:text-purple-primary">Compra en Idoogo</li>
+            <li className="hover:text-purple-primary">Blog</li>
+            <li className="hover:text-purple-primary">Marcas</li>
+            <li className="hover:text-purple-primary">
+              Políticas de devolución de productos
+            </li>
+            <li className="hover:text-purple-primary">
+              Políticas de privacidad
+            </li>
+            <li className="hover:text-purple-primary">Políticas de envío</li>
+            <li className="hover:text-purple-primary">
+              Términos y Condiciones
+            </li>
           </ul>
         </div>
         <div>
@@ -96,16 +102,29 @@ export const Footer = () => {
           <h3 className="font-bold mb-4">Contacto</h3>
           <p className="mb-2">🕒 De Lunes a Sábado: 08:00 - 18:00hs</p>
           <p className="mb-2">🕒 Domingos: 08:00 - 14:00hs</p>
-          <p className="mb-4 underline">Preguntas frecuentes</p>
-          <p className="mb-4 underline">Libro de reclamaciones</p>
+          <p className="mb-4 underline hover:text-purple-primary">
+            Preguntas frecuentes
+          </p>
+          <p className="mb-4 underline hover:text-purple-primary">
+            Libro de reclamaciones
+          </p>
           <div className="flex justify-center md:justify-start gap-4">
-            <a href="#" className="text-lg hover:text-gray-400">
+            <a href="#" className="relative group">
+              <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-1 hidden group-hover:block text-xs text-white bg-gray-800 px-2 py-1 rounded">
+                Facebook
+              </span>
               Facebook
             </a>
-            <a href="#" className="text-lg hover:text-gray-400">
+            <a href="#" className="relative group">
+              <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-1 hidden group-hover:block text-xs text-white bg-gray-800 px-2 py-1 rounded">
+                Instagram
+              </span>
               Instagram
             </a>
-            <a href="#" className="text-lg hover:text-gray-400">
+            <a href="#" className="relative group">
+              <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-1 hidden group-hover:block text-xs text-white bg-gray-800 px-2 py-1 rounded">
+                TikTok
+              </span>
               TikTok
             </a>
           </div>
@@ -114,9 +133,9 @@ export const Footer = () => {
 
       {/* Métodos de pago */}
       <div className="max-w-screen-2xl mx-auto px-4 mt-8 border-gray-700 pb-6">
-        <h3 className="text-center text-sm mb-4 tracking-wider">
-          Métodos de Pago
-        </h3>
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <h3 className="text-sm font-bold tracking-wider">Métodos de Pago</h3>
+        </div>
         <div className="flex justify-center items-center gap-4">
           <img src={Visa} alt="Visa" className="h-10 object-contain" />
           <img

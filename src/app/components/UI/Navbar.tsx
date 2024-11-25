@@ -49,10 +49,8 @@ const Navbar = () => {
         <span>OBTÉN ENVÍO GRATIS POR UNA COMPRA MAYOR A S/ 300</span>
       </div>
 
-      {/* Barra principal */}
       <div className="bg-purple-primary h-auto flex items-center justify-center px-4">
         <div className="max-w-screen-2xl w-full flex flex-col md:flex-row items-center justify-between gap-4 py-4">
-          {/* Logo */}
           <div className="flex justify-center md:justify-start">
             <a href="/">
               <img
@@ -63,7 +61,6 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Barra de búsqueda */}
           <div className="flex items-center bg-white border-2 border-purple-primary rounded-lg overflow-hidden w-full md:w-[60%] h-[40px] md:h-[50px]">
             <select className="p-2 md:p-3 bg-gray-200 border-r-2 h-[100%] text-xs md:text-sm font-bold text-gray-600 outline-none">
               <option value="Lenovo">Lenovo</option>
@@ -87,7 +84,6 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Iconos de usuario */}
           <div className="flex justify-center md:justify-end items-center gap-4 md:gap-8 text-white">
             <button className="flex flex-col items-center text-xs md:text-sm hover:text-gray-300 transition-colors duration-300">
               <FaHeadphonesAlt size={22} className="md:w-6 md:h-6" />
@@ -112,10 +108,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Barra inferior */}
       <nav className="bg-purple-dark text-white flex items-center justify-center relative px-4">
         <div className="max-w-screen-2xl w-full flex flex-wrap md:flex-nowrap items-start md:items-center justify-between text-xs md:text-sm py-2 gap-2">
-          {/* Botón de categorías */}
           <div className="relative md:hidden" ref={categoriesRef}>
             <button
               className="flex items-center gap-2 px-4 py-2 bg-purple-primary text-white rounded-lg hover:bg-purple-dark hover:text-gray-300 transition-colors duration-300"
@@ -140,7 +134,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Botón para pantallas más grandes */}
           <div className="hidden md:block relative" ref={categoriesRef}>
             <button
               className="flex items-center gap-2 hover:text-gray-300 transition-colors duration-300"
@@ -165,7 +158,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Links de navegación */}
           <div className="flex flex-wrap gap-4 md:flex-row md:gap-6">
             <button className="hover:text-gray-300 transition-colors duration-300">
               Laptops
