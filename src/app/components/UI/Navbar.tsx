@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
 
           {/* Barra de búsqueda */}
-          <div className="flex items-center bg-white rounded-lg overflow-hidden w-[50%] h-[50px]">
+          <div className="flex items-center bg-white rounded-lg overflow-hidden w-[60%] h-[50px]">
             <select className="p-2 border-none outline-none font-bold text-sm">
               <option value="Lenovo">Lenovo</option>
               <option value="Apple">Apple</option>
@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
 
           {/* Iconos de usuario */}
-          <div className="flex items-center gap-8 text-white">
+          <div className="flex items-center gap-12 text-white">
             <div className="flex flex-col items-center text-sm">
               <FaHeadphonesAlt size={28} />
               <span>Ayuda</span>
