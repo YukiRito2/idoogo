@@ -21,19 +21,24 @@ const Navbar = () => {
           </div>
 
           {/* Barra de búsqueda */}
-          <div className="flex items-center bg-white rounded-lg overflow-hidden w-[60%] h-[50px]">
-            <select className="p-2 border-none outline-none font-bold text-sm">
+          <div className="flex items-center bg-white border-2 border-purple-primary rounded-lg overflow-hidden w-[60%] h-[50px]">
+            {/* Dropdown */}
+            <select className="p-3 bg-gray-200 border-r-2 border-purple-primary text-sm font-bold text-gray-600 outline-none">
               <option value="Lenovo">Lenovo</option>
               <option value="Apple">Apple</option>
               <option value="Dell">Dell</option>
             </select>
+
+            {/* Input */}
             <input
               type="text"
               placeholder="Encuentra todo en tecnología"
-              className="p-2 flex-grow border-none outline-none text-sm"
+              className="flex-grow p-3 text-gray-700 text-base outline-none"
             />
-            <button className="p-2 bg-transparent border-none cursor-pointer">
-              <IoMdSearch size={24} className="text-purple-primary" />
+
+            {/* Botón de búsqueda */}
+            <button className="p-3 bg-transparent">
+              <IoMdSearch size={20} className="text-gray-600" />
             </button>
           </div>
 
