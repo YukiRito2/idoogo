@@ -19,11 +19,11 @@ export const Footer = () => {
       {/* Marcas más buscadas */}
       <div className="max-w-screen-2xl mx-auto px-4 text-center border-b border-gray-700 pb-6">
         <div className="flex items-center justify-center gap-4 mb-4">
-          <span className="border-t border-gray-700 w-1/3"></span>
+          <span className="border-t border-gray-700 w-full"></span>
           <h2 className="text-lg font-bold tracking-wider whitespace-nowrap">
             Marcas más buscadas
           </h2>
-          <span className="border-t border-gray-700 w-1/3"></span>
+          <span className="border-t border-gray-700 w-full"></span>
         </div>
         <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-4 md:gap-8">
           <img src={Acer} alt="Acer" className="h-8 object-contain" />
@@ -40,22 +40,24 @@ export const Footer = () => {
 
       {/* Suscripción al Newsletter */}
       <div className="max-w-screen-2xl mx-auto px-4 text-center border-b border-gray-700 pb-6 pt-6">
-        <h2 className="text-lg font-bold mb-4 tracking-wider">
-          ¡Suscríbete a nuestro Newsletter!
-        </h2>
-        <form className="flex flex-col md:flex-row justify-center items-center gap-4">
-          <input
-            type="email"
-            placeholder="¡Ingresa tu email!"
-            className="px-4 py-2 w-full md:w-[300px] text-black rounded-lg outline-none"
-          />
-          <button
-            type="submit"
-            className="bg-purple-primary text-white px-6 py-2 rounded-lg hover:bg-purple-dark transition-colors duration-300"
-          >
-            Recibir ofertas
-          </button>
-        </form>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <h2 className="text-lg font-bold tracking-wider md:text-left">
+            ¡Suscríbete a nuestro Newsletter!
+          </h2>
+          <form className="flex flex-col md:flex-row justify-center items-center gap-4 w-full md:w-auto">
+            <input
+              type="email"
+              placeholder="¡Ingresa tu email!"
+              className="px-4 py-2 w-full md:w-[400px] text-black rounded-lg outline-none"
+            />
+            <button
+              type="submit"
+              className="bg-purple-primary text-white px-6 py-2 rounded-lg hover:bg-purple-dark transition-colors duration-300"
+            >
+              Recibir ofertas
+            </button>
+          </form>
+        </div>
       </div>
 
       {/* Enlaces informativos */}
@@ -111,7 +113,7 @@ export const Footer = () => {
       </div>
 
       {/* Métodos de pago */}
-      <div className="max-w-screen-2xl mx-auto px-4 mt-8 border-b border-gray-700 pb-6">
+      <div className="max-w-screen-2xl mx-auto px-4 mt-8 border-gray-700 pb-6">
         <h3 className="text-center text-sm mb-4 tracking-wider">
           Métodos de Pago
         </h3>
