@@ -5,7 +5,7 @@ export const ShopLayout = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="min-h-[calc(100vh-154px)] w-full overflow-hidden">
         <Outlet />
       </main>
       <Footer />

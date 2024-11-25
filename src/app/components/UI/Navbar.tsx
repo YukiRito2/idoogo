@@ -4,6 +4,8 @@ import { IoMdSearch } from "react-icons/io";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
 import LogoId from "../../assets/LogoId.png"; // Importa la imagen del logo
+import { Link } from "react-router-dom";
+import { indexRoutes } from "../../constants/index.routes";
 
 const Navbar = () => {
   const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
@@ -50,15 +52,17 @@ const Navbar = () => {
       </div>
 
       <div className="bg-purple-primary h-auto flex items-center justify-center px-4">
-        <div className="max-w-screen-2xl w-full flex flex-col md:flex-row items-center justify-between gap-4 py-4">
+        <div className="max-w-screen-2xl w-[90%] 2xl:w-full flex flex-col md:flex-row items-center justify-between gap-4 py-4">
           <div className="flex justify-center md:justify-start">
-            <a href="/">
-              <img
-                src={LogoId}
-                alt="IDOOGO Logo"
-                className="h-8 md:h-10 hover:scale-110 transition-transform duration-300"
-              />
-            </a>
+            <Link to={indexRoutes.HOME_STORE}>
+              <figure>
+                <img
+                  src={LogoId}
+                  alt="IDOOGOLogo"
+                  className="h-8 md:h-10 hover:scale-110 transition-transform duration-300"
+                />
+              </figure>
+            </Link>
           </div>
 
           <div className="flex items-center bg-white border-2 border-purple-primary rounded-lg overflow-hidden w-full md:w-[60%] h-[40px] md:h-[50px]">
@@ -109,7 +113,7 @@ const Navbar = () => {
       </div>
 
       <nav className="bg-purple-dark text-white flex items-center justify-center relative px-4">
-        <div className="max-w-screen-2xl w-full flex flex-wrap md:flex-nowrap items-start md:items-center justify-between text-xs md:text-sm py-2 gap-2">
+        <div className="max-w-screen-2xl w-[90%] 2xl:w-full flex flex-wrap md:flex-nowrap items-start md:items-center justify-between text-xs md:text-sm py-2 gap-2">
           <div className="relative md:hidden" ref={categoriesRef}>
             <button
               className="flex items-center gap-2 px-4 py-2 bg-purple-primary text-white rounded-lg hover:bg-purple-dark hover:text-gray-300 transition-colors duration-300"
