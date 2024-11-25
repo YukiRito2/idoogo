@@ -16,8 +16,8 @@ import Yape from "../../assets/Yape.png";
 export const Footer = () => {
   return (
     <footer className="bg-black text-white py-8 font-mulish">
-      {/* Marcas más buscadas */}
-      <div className="max-w-screen-2xl mx-auto px-4 text-center border-b border-gray-700 pb-6">
+      {/* Marcas más buscadas para pantallas grandes */}
+      <div className="hidden md:block max-w-screen-2xl mx-auto px-4 text-center border-b border-gray-700 pb-6">
         <div className="flex items-center justify-center gap-4 mb-4">
           <span className="border-t border-gray-700 w-full"></span>
           <h2 className="text-lg font-bold tracking-wider whitespace-nowrap">
@@ -35,6 +35,40 @@ export const Footer = () => {
           <img src={Intel} alt="Intel" className="h-8 object-contain" />
           <img src={Lenovo} alt="Lenovo" className="h-8 object-contain" />
           <img src={Nvidia} alt="Nvidia" className="h-8 object-contain" />
+        </div>
+      </div>
+
+      {/* Marcas más buscadas para pantallas móviles */}
+      <div className="block md:hidden max-w-screen-2xl mx-auto px-4 text-center border-b border-gray-700 pb-6">
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <span className="border-t border-gray-700 w-full"></span>
+          <h2 className="text-lg font-bold tracking-wider whitespace-nowrap">
+            Marcas más buscadas
+          </h2>
+          <span className="border-t border-gray-700 w-full"></span>
+        </div>
+        <div className="grid grid-cols-3 gap-4">
+          <img src={Acer} alt="Acer" className="h-8 object-contain mx-auto" />
+          <img src={Amd} alt="AMD" className="h-8 object-contain mx-auto" />
+          <img src={Asus} alt="Asus" className="h-8 object-contain mx-auto" />
+          <img src={Dell} alt="Dell" className="h-12 object-contain mx-auto" />
+          <img
+            src={Gigabyte}
+            alt="Gigabyte"
+            className="h-9 object-contain mx-auto"
+          />
+          <img src={Hp} alt="HP" className="h-10 object-contain mx-auto" />
+          <img src={Intel} alt="Intel" className="h-8 object-contain mx-auto" />
+          <img
+            src={Lenovo}
+            alt="Lenovo"
+            className="h-8 object-contain mx-auto"
+          />
+          <img
+            src={Nvidia}
+            alt="Nvidia"
+            className="h-8 object-contain mx-auto"
+          />
         </div>
       </div>
 
